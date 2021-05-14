@@ -85,7 +85,6 @@ function displayProducto(producto, htmlEliminar = 1){
         eliminarHTML()
     }
     if(producto.length !== 0){
-        console.log(producto);
         producto.forEach(product =>{
             const divCol = document.createElement('div');
             const card = document.createElement("div");
@@ -118,7 +117,6 @@ function displayProducto(producto, htmlEliminar = 1){
             
             //Control productos sin imagen
             if(product.image <= 1){
-                console.log(product);
                 imagen.setAttribute('src','/img/no-imagen.jpg');
             }else{
                 imagen.setAttribute('src',`${product.image}`);
